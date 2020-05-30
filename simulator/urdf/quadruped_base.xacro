@@ -2,7 +2,26 @@
 
 <robot name="$(arg ugv_name)" xmlns:xacro="http://ros.org/wiki/xacro">
     <xacro:include filename="$(find simulator)/urdf/component_snippets.xacro" />
-    <!-- Instantiate firefly "mechanics" -->
+    <xacro:include filename="$(find simulator)/urdf/quadruped.xacro" />
+    <xacro:stereocamera_macro
+    namespace=""
+    parent_link="base_link"
+    camera_suffix="front"
+    frame_rate="30"
+    horizontal_fov="1.57"
+    image_width="640"
+    image_height="480"
+    image_format="R8G8B8"
+    min_distance="0.02"
+    max_distance="300"
+    noise_mean="0.0"
+    noise_stddev="0.007"
+    enable_visual="true">
+    <box size="0.02 0.02 0.02"/>
+    <origin xyz="0.14 0.0 0.02" rpy="0.0 0.0 0.0" />
+    </xacro:stereocamera_macro>
+
+    <!-- Instantiate firefly "mechanics" 
     <xacro:include filename="$(find simulator)/urdf/quadruped.xacro" />
 
     <xacro:camera_macro
@@ -71,6 +90,6 @@
     lidar_mass="0.03"
     lidar_topic="lidar/right">
     <origin xyz="0.0 -0.14 -0.02" rpy="0.0 0.0 -1.57"/>
-    </xacro:lidar_macro>
+    </xacro:lidar_macro>-->
 
 </robot>

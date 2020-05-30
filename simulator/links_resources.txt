@@ -1,0 +1,10 @@
+Links for AFPFM and the simulator used and also a github implementation of it.
+
+Links for stereo-camera-plugin.
+https://bitbucket.org/osrf/drcsim/src/52a691b8956045442ef22ba0aaee4520716807ff/drcsim_gazebo/launch/atlas_bringup.launch?at=default#cl-38
+https://bitbucket.org/osrf/drcsim/src/52a691b8956045442ef22ba0aaee4520716807ff/multisense_sl_description/urdf/multisense_sl.urdf?at=default#cl-200
+
+For understanding depth estimation using stereo_image_proc.
+http://wiki.ros.org/stereo_image_proc
+http://wiki.ros.org/stereo_image_proc/Tutorials/ChoosingGoodStereoParameters
+https://courses.cs.washington.edu/courses/cse455/09wi/Lects/lect16.pdf

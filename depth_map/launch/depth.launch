@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+<!--<include file="$(find simulator)/launch/sim.launch"/>-->
+
+<node pkg="depth_map" type="depth_map_node" name="depth_map_node" output="screen">
+    <remap from="disparity_img" to="/stereocamera_front/disparity"/>
+</node>
+
+</launch> 

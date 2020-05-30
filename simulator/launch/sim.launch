@@ -14,6 +14,7 @@
         <arg name="paused" default="$(arg paused)"/>
         <arg name="use_sim_time" default="$(arg use_sim_time)"/>
     </include>
+    
 
     <group ns="$(arg ugv_name)">
         <include file="$(find simulator)/launch/spawn_quad.launch">
